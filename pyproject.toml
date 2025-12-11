@@ -1,0 +1,32 @@
+[project]
+name = "yarn-trend-agent"
+version = "0.1.0"
+description = "An agentic system for analyzing yarn trends on Ravelry"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "pandas>=2.1.0",
+    "anthropic>=0.18.0",
+    "python-dotenv>=1.0.0",
+    "ratelimit>=2.2.1",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
